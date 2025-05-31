@@ -244,13 +244,15 @@ function love.update(dt)
 end
 
 function love.draw()
-    -- Draw background
-    love.graphics.setColor(1, 1, 1)
+    -- Draw background with reduced saturation
+    love.graphics.setColor(0.8, 0.8, 0.8)  -- Reduced color intensity to 80%
     local current_background = game_phase == 1 and background_image or game_phase == 2 and background2_image or background3_image
     love.graphics.draw(current_background, 0, 0, 0, 1200/current_background:getWidth(), 800/current_background:getHeight())
     
-    -- Draw character
+    -- Reset color for other elements
     love.graphics.setColor(1, 1, 1)
+    
+    -- Draw character
     local scale = 4.0
     local img = character_images[character_frame]
     love.graphics.draw(img, character_x, character_y, 0, 
@@ -274,22 +276,22 @@ function love.draw()
     -- Draw SOCKS score with sock icon
     love.graphics.setColor(1, 1, 1)
     love.graphics.setFont(font_huge)
-    local sock_size = 60  -- Size of the sock icon
+    local sock_size = 60
     local sock_scale = sock_size / sock_image:getWidth()
     local score_text = "SOCKS: " .. score
     local text_width = font_huge:getWidth(score_text)
-    local total_width = text_width + sock_size + 20  -- 20 pixels spacing between text and icon
+    local total_width = text_width + sock_size + 20
     
     -- Draw sock icon
     love.graphics.draw(sock_image, 
-        600 - total_width/2,  -- Center the total width
-        20,  -- Same y as text
+        600 - total_width/2,
+        20,
         0, sock_scale, sock_scale)
     
     -- Draw score text
     love.graphics.printf(score_text, 
-        600 - total_width/2 + sock_size + 20,  -- Start text after the icon
-        20,  -- Same y as icon
+        600 - total_width/2 + sock_size + 20,
+        20,
         text_width, "left")
 
     -- Draw the laundry clicker
@@ -333,10 +335,10 @@ function love.draw()
         
         -- Draw icon next to button
         love.graphics.setColor(1, 1, 1)
-        local icon_size = btn.h * 1.2  -- Made icons bigger
+        local icon_size = btn.h * 1.2
         local icon_image = btn.level == 1 and laundry_images[3] or btn.level == 2 and bike_images[1] or car_images[1]
         love.graphics.draw(icon_image, 
-            btn.x - icon_size - 5,  -- Moved closer to button
+            btn.x - icon_size - 5,
             btn.y + (btn.h - icon_size)/2,
             0, icon_size/icon_image:getWidth(), icon_size/icon_image:getHeight())
 
