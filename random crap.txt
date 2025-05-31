@@ -1,0 +1,15 @@
+I am designing a cookie clicker video game to educate people for finanicial literacy.  We are using socks as a metaphor for currency, because the game world has not invented shoes, and there is a moth infestation.  Both of these are metaphors for inflation.   
+
+The video game's main character is a bollywood star that did something bad, then escaped to a different country which is a metaphor for the united states.  initially, the character moves into a cardboard box, and loses socks over time because there are no shoes in this world.  They walk by a laundromat and find they can do chores to get socks.  This is level1, where the number of socks in the user's account is in the single digits.
+
+Once the user gets to 10 socks, they hit level 2.  They now live in a van and pedal a pedicab to make money.  Both of these use up more socks, yet yield more socks as the user clicks.  
+
+At this point, the user's bollywood agent back home got out of jail (because they were implicated in the unspecified bad thing the user did), and is now the custodian of one million socks of royalties from the user's previous bollywood career.  For (possibly unspecified) reasons, these socks are not fungible with the socks in the user's country.  
+
+At this point, the game needs to introduce mechanics which are analogies to loans and investments, to demonstrate the power of compound interest and to show the long-term effects of how good financial decisions can prevent predatory lending, and grow wealth.  
+
+We need to extend these ideas out to several more levels, because have to produce a 2-3 minute video illustrating a compelling story that demonstrates that the app being built will be entertaining and effective at tricking the user into learning about how compound interest can have profound positive and negative effects in the real world.
+
+C
+C
+As an international student, I've often looked at my bank account and wished other people would know what it's like to be in our shoes.  I've never thought about /creating/ something to do that, until today.  Users will learn financial literacy from this, but I hope they also learn about us too.
